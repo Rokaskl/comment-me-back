@@ -1,0 +1,40 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Comment Me!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/addon-front.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Comment me
+      </h1>
+    </header>
+
+    <main>
+ 
+      
+      <form>
+        <input name="comment" aria-label="a new comment" type="text" maxlength="100" placeholder="Comment...">
+        <button type="submit" id="submit-comment">Submit Comment</button>
+      </form>
+      
+      <section class="comments">
+        <ul id="comments"></ul>
+      </section>
+      
+    </main>
+
+  </body>
+</html>
